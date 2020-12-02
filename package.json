@@ -1,0 +1,27 @@
+{
+  "name": "choices",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node -r tsconfig-paths/register src/main.ts",
+    "lint": "tslint -p tsconfig.json -c tslint.json",
+    "test": "jasmine-ts --config=./jasmine.json"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^3.4.4",
+    "jasmine": "^3.5.0",
+    "jasmine-ts": "^0.3.0",
+    "pre-commit": "^1.2.2",
+    "ts-node": "^8.4.1",
+    "tsconfig-paths": "^3.9.0",
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.4"
+  },
+  "dependencies": {
+    "@types/node": "^14.14.10",
+    "axios": "^0.21.0",
+    "moment": "^2.29.1",
+    "path": "^0.12.7"
+  }
+}
