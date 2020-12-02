@@ -27,7 +27,7 @@ export class World {
   public get opponents(): Array<User> { return this.lesGrosFonbous; }
   public get radius(): number { return this.mapDefinition.map.radius; }
 
-  public fillUserShip(user: User): void {
+  private fillUserShip(user: User): void {
     for (const entity of this.entities) {
       if (entity.id === user.shipId) {
         user.entity = entity;
